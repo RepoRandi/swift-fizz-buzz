@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24042854278721BF00A9A01E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24042853278721BF00A9A01E /* main.swift */; };
+		2404285C278721CD00A9A01E /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 2404285B278721CD00A9A01E /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2404285C278721CD00A9A01E /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = FizzBuzz;
+			packageProductDependencies = (
+				2404285B278721CD00A9A01E /* Algorithms */,
+			);
 			productName = FizzBuzz;
 			productReference = 24042850278721BF00A9A01E /* FizzBuzz */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 24042847278721BF00A9A01E;
+			packageReferences = (
+				2404285A278721CD00A9A01E /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 24042851278721BF00A9A01E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,6 +294,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2404285A278721CD00A9A01E /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2404285B278721CD00A9A01E /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2404285A278721CD00A9A01E /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24042848278721BF00A9A01E /* Project object */;
 }
